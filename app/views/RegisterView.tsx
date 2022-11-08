@@ -161,7 +161,7 @@ class RegisterView extends React.Component<IProps, any> {
 		if (!server) {
 			return;
 		}
-		openLink(`${server}/${route}`, theme);
+		openLink(route, theme);
 	};
 
 	renderCustomFields = () => {
@@ -320,14 +320,14 @@ class RegisterView extends React.Component<IProps, any> {
 							{`${I18n.t('Onboarding_agree_terms')}\n`}
 							<Text
 								style={[styles.bottomContainerTextBold, { color: themes[theme].actionTintColor }]}
-								onPress={() => this.openContract('terms-of-service')}
+								onPress={() => this.openContract('https://www.ipk12.com/term.html')}
 							>
 								{I18n.t('Terms_of_Service')}
 							</Text>{' '}
 							{I18n.t('and')}
 							<Text
 								style={[styles.bottomContainerTextBold, { color: themes[theme].actionTintColor }]}
-								onPress={() => this.openContract('privacy-policy')}
+								onPress={() => this.openContract(`http://ipk12.com/privacypolicy.html`)}
 							>
 								{' '}
 								{I18n.t('Privacy_Policy')}
