@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Android Chrome 512 x 512.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Android Chrome 512 x 512@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Android Chrome 512 x 512@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

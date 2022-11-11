@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>588472601103-j3iilt98bvjnbqio2gsca1cknti87tfb.apps.googleusercontent.com</string>
+	<string>588472601103-ejlqqa172if9jppbcbrvmcc1opdk75nv.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.588472601103-j3iilt98bvjnbqio2gsca1cknti87tfb</string>
+	<string>com.googleusercontent.apps.588472601103-ejlqqa172if9jppbcbrvmcc1opdk75nv</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBTA73keM4p0BV9DyJsa1bfCbT8ffwerBI</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.ipk12.ios.chat</string>
+	<string>com.ipk12.chat</string>
 	<key>PROJECT_ID</key>
 	<string>push-notification-8321c</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:588472601103:ios:4df6eea171b7cb16bff17a</string>
+	<string>1:588472601103:ios:b4d8d5c06a66b060bff17a</string>
 </dict>
 </plist>

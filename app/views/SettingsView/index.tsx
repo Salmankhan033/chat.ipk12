@@ -17,7 +17,7 @@ import StatusBar from '../../containers/StatusBar';
 import { LISTENER } from '../../containers/Toast';
 import { RootEnum } from '../../definitions';
 import I18n from '../../i18n';
-import { APP_STORE_LINK, FDROID_MARKET_LINK, isFDroidBuild, LICENSE_LINK, PLAY_MARKET_LINK } from '../../lib/constants';
+import { APP_STORE_LINK, FDROID_MARKET_LINK, isFDroidBuild, PLAY_MARKET_LINK } from '../../lib/constants';
 import database from '../../lib/database';
 import { useAppSelector } from '../../lib/hooks';
 import { clearCache } from '../../lib/methods';
@@ -26,7 +26,7 @@ import { getDeviceModel, getReadableVersion, isAndroid } from '../../lib/methods
 import EventEmitter from '../../lib/methods/helpers/events';
 import { showConfirmationAlert, showErrorAlert } from '../../lib/methods/helpers/info';
 import { events, logEvent } from '../../lib/methods/helpers/log';
-import openLink from '../../lib/methods/helpers/openLink';
+// import openLink from '../../lib/methods/helpers/openLink';
 import { onReviewPress } from '../../lib/methods/helpers/review';
 import { Services } from '../../lib/services';
 import { getUserSelector } from '../../selectors/login';
@@ -37,7 +37,7 @@ import SidebarView from '../SidebarView';
 type TLogScreenName = 'SE_GO_LANGUAGE' | 'SE_GO_DEFAULTBROWSER' | 'SE_GO_THEME' | 'SE_GO_PROFILE' | 'SE_GO_SECURITYPRIVACY';
 
 const SettingsView = (): React.ReactElement => {
-	const { colors, theme } = useTheme();
+	const { colors } = useTheme();
 	const navigation = useNavigation<StackNavigationProp<SettingsStackParamList, 'SettingsView'>>();
 	const dispatch = useDispatch();
 	const isMasterDetail = useAppSelector(state => state.app.isMasterDetail);
@@ -117,8 +117,8 @@ const SettingsView = (): React.ReactElement => {
 
 	const sendEmail = async () => {
 		logEvent(events.SE_CONTACT_US);
-		const subject = encodeURI('Rocket.Chat Mobile App Support');
-		const email = encodeURI('support@rocket.chat');
+		const subject = encodeURI('IPK12 Chat Mobile App Support');
+		const email = encodeURI('info@ipk12.org');
 		const description = encodeURI(`
 			version: ${getReadableVersion}
 			device: ${getDeviceModel}
@@ -127,7 +127,7 @@ const SettingsView = (): React.ReactElement => {
 			await Linking.openURL(`mailto:${email}?subject=${subject}&body=${description}`);
 		} catch (e) {
 			logEvent(events.SE_CONTACT_US_F);
-			showErrorAlert(I18n.t('error-email-send-failed', { message: 'support@rocket.chat' }));
+			showErrorAlert(I18n.t('error-email-send-failed', { message: 'info@ipk12.org' }));
 		}
 	};
 
@@ -160,10 +160,10 @@ const SettingsView = (): React.ReactElement => {
 		saveToClipboard(getReadableVersion);
 	};
 
-	const onPressLicense = () => {
-		logEvent(events.SE_READ_LICENSE);
-		openLink(LICENSE_LINK, theme);
-	};
+	// const onPressLicense = () => {
+	// 	logEvent(events.SE_READ_LICENSE);
+	// 	openLink(LICENSE_LINK, theme);
+	// };
 
 	return (
 		<SafeAreaView testID='settings-view'>
@@ -235,7 +235,7 @@ const SettingsView = (): React.ReactElement => {
 
 				<List.Section>
 					<List.Separator />
-					<List.Item title='License' onPress={onPressLicense} showActionIndicator testID='settings-view-license' />
+					{/* <List.Item title='License' onPress={onPressLicense} showActionIndicator testID='settings-view-license' /> */}
 					<List.Separator />
 					<List.Item
 						title={I18n.t('Version_no', { version: getReadableVersion })}

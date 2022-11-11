@@ -9,7 +9,6 @@
 #import <Firebase.h>
 #import <Bugsnag/Bugsnag.h>
 #import <MMKV/MMKV.h>
-
 #import <React/RCTAppSetupUtils.h>
 #if RCT_NEW_ARCH_ENABLED
 #import <React/CoreModulesPlugins.h>

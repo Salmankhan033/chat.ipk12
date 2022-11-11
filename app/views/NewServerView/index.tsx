@@ -13,7 +13,6 @@ import { CERTIFICATE_KEY, themes } from '../../lib/constants';
 import Button from '../../containers/Button';
 import FormContainer, { FormContainerInner } from '../../containers/FormContainer';
 import * as HeaderButton from '../../containers/HeaderButton';
-import OrSeparator from '../../containers/OrSeparator';
 import { IApplicationState, IBaseScreen, TServerHistoryModel } from '../../definitions';
 import { withDimensions } from '../../dimensions';
 import I18n from '../../i18n';
@@ -57,10 +56,10 @@ const styles = StyleSheet.create({
 	chooseCertificate: {
 		...sharedStyles.textSemibold
 	},
-	description: {
-		...sharedStyles.textRegular,
-		textAlign: 'center'
-	},
+	// description: {
+	// 	...sharedStyles.textRegular,
+	// 	textAlign: 'center'
+	// },
 	connectButton: {
 		marginBottom: 0
 	}
@@ -360,7 +359,7 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 							}
 						]}
 					>
-						Rocket.Chat
+					IPK12 Chat
 					</Text>
 					<Text
 						style={[
@@ -392,7 +391,7 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 						style={[styles.connectButton, { marginTop: verticalScale({ size: 16, height }) }]}
 						testID='new-server-view-button'
 					/>
-					<OrSeparator theme={theme} />
+					{/* <OrSeparator theme={theme} />
 					<Text
 						style={[
 							styles.description,
@@ -413,9 +412,9 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 						disabled={connecting}
 						loading={connectingOpen && connecting}
 						testID='new-server-view-open'
-					/>
+					/> */}
 				</FormContainerInner>
-				{this.renderCertificatePicker()}
+				{/* {this.renderCertificatePicker()} */}
 			</FormContainer>
 		);
 	}

@@ -1,6 +1,6 @@
 {
 	"name": "rocket-chat-reactnative",
-	"version": "4.33.0",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"start": "react-native start",
@@ -28,7 +28,8 @@
 		]
 	},
 	"dependencies": {
-		"@bugsnag/react-native": "^7.10.5",
+		"@bugsnag/react-native": "^7.18.2",
+		"@bugsnag/source-maps": "^2.3.1",
 		"@codler/react-native-keyboard-aware-scroll-view": "^2.0.1",
 		"@gorhom/bottom-sheet": "^4.3.1",
 		"@hookform/resolvers": "^2.9.7",
@@ -104,7 +105,7 @@
 		"react-native-mmkv-storage": "^0.7.6",
 		"react-native-modal": "13.0.1",
 		"react-native-navigation-bar-color": "2.0.1",
-		"react-native-notifications": "^4.3.2",
+		"react-native-notifications": "4.3.2",
 		"react-native-notifier": "1.6.1",
 		"react-native-orientation-locker": "1.1.8",
 		"react-native-picker-select": "^8.0.4",
@@ -153,7 +154,6 @@
 		"@babel/plugin-proposal-decorators": "^7.8.3",
 		"@babel/plugin-transform-named-capturing-groups-regex": "^7.17.12",
 		"@babel/runtime": "^7.12.5",
-		"@bugsnag/source-maps": "^2.2.0",
 		"@rocket.chat/eslint-config": "^0.4.0",
 		"@storybook/addon-storyshots": "6.3",
 		"@storybook/react": "6.3",

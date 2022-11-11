@@ -46,7 +46,7 @@ const SendEmailConfirmationView = ({ navigation, route }: ISendEmailConfirmation
 
 	useEffect(() => {
 		navigation.setOptions({
-			title: 'Rocket.Chat'
+			title: 'IPK12 Chat'
 		});
 		if (route.params?.user) {
 			validate(route.params.user);
