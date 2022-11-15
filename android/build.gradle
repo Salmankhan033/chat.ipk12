@@ -1,4 +1,4 @@
-
+import org.apache.tools.ant.taskdefs.condition.Os
 
 def safeExtGet(prop, fallback) {
     rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
@@ -45,7 +45,7 @@ buildscript {
             classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.0'
             classpath 'com.bugsnag:bugsnag-android-gradle-plugin:7.+'
         }
-        classpath("com.android.tools.build:gradle:7.0.4")
+        classpath('com.android.tools.build:gradle:7.3.1')
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("de.undercouch:gradle-download-task:4.1.2")
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
