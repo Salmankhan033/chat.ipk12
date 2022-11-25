@@ -507,14 +507,14 @@ PODS:
     - React-Core
     - SDWebImage (~> 5.12.5)
     - SDWebImageWebPCoder (~> 0.8.4)
-  - RNFBAnalytics (14.11.0):
+  - RNFBAnalytics (14.12.0):
     - Firebase/AnalyticsWithoutAdIdSupport (= 8.15.0)
     - React-Core
     - RNFBApp
-  - RNFBApp (14.11.0):
+  - RNFBApp (14.12.0):
     - Firebase/CoreOnly (= 8.15.0)
     - React-Core
-  - RNFBCrashlytics (14.11.0):
+  - RNFBCrashlytics (14.12.0):
     - Firebase/Crashlytics (= 8.15.0)
     - React-Core
     - RNFBApp
@@ -978,9 +978,9 @@ SPEC CHECKSUMS:
   RNDateTimePicker: 7658208086d86d09e1627b5c34ba0cf237c60140
   RNDeviceInfo: 0400a6d0c94186d1120c3cbd97b23abc022187a9
   RNFastImage: d5510534be9cccc80e824bfec6369c116d212871
-  RNFBAnalytics: 091c8adcbb0da1e1680ce434fc6e8a0a501fe2e6
-  RNFBApp: b1b5a80a676a07dea17e778bda7c1e8b69b2f5ec
-  RNFBCrashlytics: 357955a1564721ca9001960e57b395c6a319f9be
+  RNFBAnalytics: c5740a00a436398796639189f82b58b1ebe4c705
+  RNFBApp: e4439717c23252458da2b41b81b4b475c86f90c4
+  RNFBCrashlytics: 94e1f78e2a9aa9e02edbfb0d3f1f0921ce00094b
   RNFileViewer: ce7ca3ac370e18554d35d6355cffd7c30437c592
   RNGestureHandler: 61628a2c859172551aa2100d3e73d1e57878392f
   RNImageCropPicker: 97289cd94fb01ab79db4e5c92938be4d0d63415d

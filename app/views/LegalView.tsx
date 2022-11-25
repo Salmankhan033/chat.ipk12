@@ -23,14 +23,7 @@ const LegalView = ({ navigation }: ILegalViewProps): React.ReactElement => {
 			title: I18n.t('Legal')
 		});
 	}, []);
-
-	const onPressItem = ({ route }: { route: string }) => {
-		if (!server) {
-			return;
-		}
-		openLink(`${server}/${route}`, theme);
-	};
-
+	
 	return (
 		<SafeAreaView testID='legal-view'>
 			<StatusBar />
@@ -39,14 +32,14 @@ const LegalView = ({ navigation }: ILegalViewProps): React.ReactElement => {
 					<List.Separator />
 					<List.Item
 						title='Terms_of_Service'
-						onPress={() => onPressItem({ route: 'terms-of-service' })}
+						onPress={() => openLink(`https://www.ipk12.com/term.html`, theme)}
 						testID='legal-terms-button'
 						showActionIndicator
 					/>
 					<List.Separator />
 					<List.Item
 						title='Privacy_Policy'
-						onPress={() => onPressItem({ route: 'privacy-policy' })}
+						onPress={() => openLink(`http://ipk12.com/privacypolicy.html`, theme)}
 						testID='legal-privacy-button'
 						showActionIndicator
 					/>
