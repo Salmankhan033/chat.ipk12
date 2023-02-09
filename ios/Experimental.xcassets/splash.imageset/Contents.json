@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Android Chrome 512 x 512.png",
+      "filename" : "ic_notification.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Android Chrome 512 x 512@2x.png",
+      "filename" : "ic_notification@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Android Chrome 512 x 512@3x.png",
+      "filename" : "ic_notification@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

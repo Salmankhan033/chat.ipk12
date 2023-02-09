@@ -32,7 +32,7 @@ const WithoutServerView = (): React.ReactElement => {
 
 	useLayoutEffect(() => {
 		navigation.setOptions({
-			title: 'IPK12 Chat',
+			title: 'Safebook',
 			headerLeft: () => <HeaderButton.CancelModal onPress={ShareExtension.close} testID='share-extension-close' />
 		});
 	}, [navigation]);

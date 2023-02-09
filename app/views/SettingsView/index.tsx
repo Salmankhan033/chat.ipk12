@@ -117,7 +117,7 @@ const SettingsView = (): React.ReactElement => {
 
 	const sendEmail = async () => {
 		logEvent(events.SE_CONTACT_US);
-		const subject = encodeURI('IPK12 Chat Mobile App Support');
+		const subject = encodeURI('Safebook Mobile App Support');
 		const email = encodeURI('info@ipk12.org');
 		const description = encodeURI(`
 			version: ${getReadableVersion}

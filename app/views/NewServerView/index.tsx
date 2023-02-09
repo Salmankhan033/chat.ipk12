@@ -359,7 +359,7 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 							}
 						]}
 					>
-					IPK12 Chat
+				Safebook
 					</Text>
 					<Text
 						style={[

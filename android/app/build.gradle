@@ -147,7 +147,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode VERSIONCODE as Integer
-        versionName "1.0.1"
+        versionName "1.0.3"
         vectorDrawables.useSupportLibrary = true
         if (!isFoss) {
             manifestPlaceholders = [BugsnagAPIKey: BugsnagAPIKey as String]
@@ -357,13 +357,10 @@ dependencies {
     playImplementation project(':@react-native-firebase_app')
     playImplementation project(':@react-native-firebase_analytics')
     playImplementation project(':@react-native-firebase_crashlytics')
-    implementation(project(':react-native-jitsi-meet')) { // https://github.com/skrafft/react-native-jitsi-meet#side-note
-      exclude group: 'com.facebook.react',module:'react-native-svg'
-    }
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
     //noinspection GradleDynamicVersion
-    implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation "com.facebook.react:react-native:0.68.2!!"  // From node_modules
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'

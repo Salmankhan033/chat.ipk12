@@ -2,6 +2,7 @@ import React from 'react';
 import { I18nManager } from 'react-native';
 import { createStackNavigator, StackNavigationOptions } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import { isIOS } from '../lib/methods/helpers';
 
 import { ThemeContext } from '../theme';
 import { ModalAnimation, StackAnimation, defaultHeader, themedHeader } from '../lib/methods/helpers/navigation';
@@ -135,7 +136,9 @@ const ChatsStackNavigator = () => {
 			<ChatsStack.Screen name='QueueListView' component={QueueListView} />
 			<ChatsStack.Screen name='CannedResponsesListView' component={CannedResponsesListView} />
 			<ChatsStack.Screen name='CannedResponseDetail' component={CannedResponseDetail} />
-			<ChatsStack.Screen name='JitsiMeetView' component={JitsiMeetView} options={{ headerShown: false }} />
+			<ChatsStack.Screen
+				name='JitsiMeetView' component={JitsiMeetView} options={{ headerShown: false, animationEnabled: isIOS }}
+			/>
 		</ChatsStack.Navigator>
 	);
 };

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useIsFocused } from '@react-navigation/native';
 import { createStackNavigator, StackNavigationOptions, StackNavigationProp } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import { isIOS } from '../../lib/methods/helpers';
 
 import { ThemeContext } from '../../theme';
 import {
@@ -222,7 +223,8 @@ const InsideStackNavigator = React.memo(() => {
 			<InsideStack.Screen name='ModalStackNavigator' component={ModalStackNavigator} options={{ headerShown: false }} />
 			<InsideStack.Screen name='AttachmentView' component={AttachmentView} />
 			<InsideStack.Screen name='ModalBlockView' component={ModalBlockView} options={ModalBlockView.navigationOptions} />
-			<InsideStack.Screen name='JitsiMeetView' component={JitsiMeetView} options={{ headerShown: false }} />
+			<InsideStack.Screen name='JitsiMeetView' component={JitsiMeetView} options={{ headerShown: false, animationEnabled: isIOS }}
+			/>
 			<InsideStack.Screen name='ShareView' component={ShareView} />
 		</InsideStack.Navigator>
 	);

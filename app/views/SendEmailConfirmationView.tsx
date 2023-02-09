@@ -46,7 +46,7 @@ const SendEmailConfirmationView = ({ navigation, route }: ISendEmailConfirmation
 
 	useEffect(() => {
 		navigation.setOptions({
-			title: 'IPK12 Chat'
+			title: 'Safebook'
 		});
 		if (route.params?.user) {
 			validate(route.params.user);
